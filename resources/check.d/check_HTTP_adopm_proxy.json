@@ -1,0 +1,14 @@
+{
+  "checks": {
+    "check_HTTP_adopm_proxy": {
+      "command": "${PLUGINS_DIR}/basic/check-http.rb -u http://${ADOPM_PROXY_URL}",
+      "handlers": [
+        "mailer"
+      ],
+      "subscribers": [
+        "adopm_proxy"
+      ],
+      "interval": 60
+    }
+  }
+}
