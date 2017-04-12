@@ -1,7 +1,7 @@
 {
   "checks": {
     "check_basic_procs": {
-      "command": "${PLUGINS_DIR}/basic/check-procs.rb",
+      "command": "/etc/sensu/plugins/basic/check-procs.rb",
       "handlers": [
         "mailer"
       ],

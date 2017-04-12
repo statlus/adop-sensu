@@ -1,7 +1,7 @@
 {
   "checks": {
     "check_basic_load": {
-      "command": "${PLUGINS_DIR}/basic/check-load.rb -w 3.0,2.0,1.0 -c 6.0,4.0,2.0 -p",
+      "command": "/etc/sensu/plugins/basic/check-load.rb -w 3.0,2.0,1.0 -c 6.0,4.0,2.0 -p",
       "handlers": [
         "mailer"
       ],
