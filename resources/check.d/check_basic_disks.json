@@ -3,7 +3,8 @@
     "check_basic_disks": {
       "command": "/etc/sensu/plugins/basic/check-disk.rb -d -w 75 -c 90 -x nfs -i /boot -i /dev/shm",
       "handlers": [
-        "mailer"
+        "mailer",
+        "kpi-handler"
       ],
       "subscribers": [
         "basic"
