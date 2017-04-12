@@ -1,0 +1,12 @@
+{
+    "handlers": {
+        "kpi-handler": {
+            "type": "set",
+            "handlers": ["splunk"]
+        },
+        "splunk": {
+            "type": "pipe",
+            "command": "/etc/sensu/plugins/basic/splunk-handler.rb"
+        }
+    }
+}
