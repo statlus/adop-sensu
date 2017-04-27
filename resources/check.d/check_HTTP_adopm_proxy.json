@@ -4,7 +4,8 @@
       "command": "/etc/sensu/plugins/basic/check-http.rb -u http://$ADOPM_PROXY_URL",
       "handlers": [
         "mailer",
-        "kpi-handler"
+        "kpi-handler",
+        "hipchat-handler"
       ],
       "subscribers": [
         "adopm_proxy"

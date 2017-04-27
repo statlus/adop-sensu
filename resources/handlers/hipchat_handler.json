@@ -1,0 +1,23 @@
+{ 
+  "handlers": {
+    "hipchat-handler": {
+      "command": "/etc/sensu/plugins/basic/handler-hipchat.rb -j /etc/sensu/handlers/hipchat_handler.json",
+      "type": "pipe",
+      "filters": [
+
+      ],
+      "severities": [
+        "ok",
+        "warning",
+        "critical",
+        "unknown"
+      ]
+    }
+  },
+  "hipchat": {
+    "apikey": "VTuCtQD5V46L7Qz02aKmqluYnfrYl7KpYfrineET",
+    "apiversion": "v1",
+    "room": "tjx",
+    "from": "Sensu"
+  }
+}
